@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+/* count the blanks tabs and newlines */
+
+int main (){
+
+  int cb,ct,cl = 0;
+  int c;
+
+  while((c = getchar()) != EOF){
+    switch (c){
+     case ' ':
+       ptintf("Im a blank");
+       break;
+     default:
+       break;
+    }
+  }
+  
+  
+  return 0;
+}

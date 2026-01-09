@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+/* Copy the intput and replace each string of one or more blanks by a single blank */
+
+int main (){
+
+  int c;
+  bool last_space = false;
+  
+  while((c = getchar()) != EOF){
+
+    if (c == ' '){      
+      if(!last_space)
+	putchar(c);
+      last_space = true;
+    }
+    else {
+      last_space = false;
+      putchar(c);
+    }
+  }
+
+  return 0;
+}
