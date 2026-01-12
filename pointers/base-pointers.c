@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 void swap(int *a, int *b){
-  int temp;
-  temp = *a;
+  int temp = *a;
   *a = *b;
   *b = temp;
 }
@@ -34,6 +33,7 @@ int main (){
 
   int a = 5, b = 10;
   printf("The value of variable a is: %d\nThe value of variable b is: %d\n",a,b);
+  
   printf("Calling swap function...\n");
   swap(&a,&b);
   printf("The value of variable a is: %d\nThe value of variable b is: %d\n",a,b);
